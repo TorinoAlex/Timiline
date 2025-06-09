@@ -383,10 +383,22 @@
             opacity: 0;
         }
         
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
+       @media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .name {
+        white-space: nowrap;
+        display: inline-block;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
             
             h2 {
                 font-size: 2rem;
@@ -430,7 +442,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Приглашение на праздничный ужин в честь Юбилея Игоря Шахрая</h1>
+            <h1>Приглашение на праздничный ужин в честь Юбилея <span class="name">Игоря Шахрая</span></h1
             <div class="date-badge">15 июля 2025</div>
             <p style="color: var(--primary); font-weight: 600;">Буду рад видеть вас, Уважаемые Гости!</p>
         </div>
