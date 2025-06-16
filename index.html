@@ -59,6 +59,7 @@
             right: 0;
             bottom: 0;
             background: url('https://i.yapx.cc/ZYurA.jpg') center/cover;
+            background-size: 2000px 1000px;
             opacity: 0.7;
             z-index: 0;
         }
@@ -112,9 +113,9 @@
     font-weight: 600;
     font-size: 1.2rem;
     /* Убираем margin-top, оставляем только небольшой margin-bottom */
-    margin: 150px 0 5px;
+    margin: 0 0 5px;
     /* Сдвигаем только сам элемент вниз */
-    transform: translateY(200px);
+    transform: translateY(218px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     position: relative;
     overflow: hidden;
@@ -456,11 +457,13 @@
                 left: 21px;
             }
             .date-badge {
+        /* Явно указываем те же значения, что и в десктопной версии */
         padding: 10px 25px !important;
         font-size: 1.2rem !important;
-        transform: translateY(110px) !important;
+        transform: translateY(150px) !important;
+        /* Другие свойства, если они переопределяются в мобильной верстке */
             }
-            
+
         }
     </style>
 </head>
