@@ -404,6 +404,15 @@
             background-color: var(--accent);
             opacity: 0;
         }
+
+        /* Стили для изображения места проведения */
+        .venue-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
         
         @media (max-width: 768px) {
             header {
@@ -481,6 +490,9 @@
             
             <h3>Singer Bar</h3>
             <h3>ул. Пятницкая, 52, строение 2, Москва</h3>
+
+            <!-- Вставленное изображение места проведения -->
+            <img src="https://i.yapx.ru/ZdXQg.jpg" alt="Фото Singer Bar" class="venue-image">
 
             <div class="map-container">
                 <!-- Яндекс.Карта с точным адресом -->
