@@ -10,7 +10,7 @@
             --primary: #D4AF37; /* Основной золотистый цвет */
             --primary-light: #FFD700; /* Светло-золотой */
             --primary-dark: #996515; /* Темно-золотой */
-            --secondary:#0a2752;
+            --secondary: #0a2752;
             --accent: #D4AF37;
             --light: #ecf0f1;
             --dark: #0a2752;
@@ -52,27 +52,26 @@
         }
         
         header::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('https://i.yapx.ru/ZdXiG.jpg') center/cover no-repeat;
-        opacity: 0.9;
-        z-index: 0;
-        filter: saturate(1.1) contrast(1.05);
-        image-rendering: crisp-edges;
-
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://i.yapx.ru/ZdXiG.jpg') center/cover no-repeat;
+            opacity: 0.9;
+            z-index: 0;
+            filter: saturate(1.1) contrast(1.05);
+            image-rendering: crisp-edges;
         }
         
-     header .container {
-    position: relative;
-    z-index: 1;
-    padding: 40px 20px;
-    margin-top: -100px; 
-    transform: translateY(-5px);
-    padding-bottom: 80px;
+        header .container {
+            position: relative;
+            z-index: 1;
+            padding: 40px 20px;
+            margin-top: -100px; 
+            transform: translateY(-5px);
+            padding-bottom: 80px;
         }
         
         h1, h2, h3 {
@@ -107,20 +106,18 @@
         }
         
         .date-badge {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
-    color: #000;
-    padding: 10px 25px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    /* Убираем margin-top, оставляем только небольшой margin-bottom */
-    margin: 0 0 5px;
-    /* Сдвигаем только сам элемент вниз */
-    transform: translateY(218px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    position: relative;
-    overflow: hidden;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
+            color: #000;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 0 0 5px;
+            transform: translateY(218px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
         }
 
         .date-badge2 {
@@ -132,7 +129,7 @@
             font-weight: 600;
             font-size: 1.2rem;
             margin: 150px 0 5px;
-            transform: translateY(35px)
+            transform: translateY(35px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             position: relative;
             overflow: hidden;
@@ -417,12 +414,12 @@
         }
         
         @media (max-width: 768px) {
-        header::before {
-        background-attachment: scroll;
-        filter: saturate(1.2) contrast(1.1);
-    }
+            header::before {
+                background-attachment: scroll;
+                filter: saturate(1.2) contrast(1.1);
+            }
             header {
-             background-size: auto 100%;;
+                background-size: auto 100%;
             }
             
             header .container {
@@ -471,13 +468,10 @@
                 left: 21px;
             }
             .date-badge {
-        /* Явно указываем те же значения, что и в десктопной версии */
-        padding: 10px 25px !important;
-        font-size: 1.2rem !important;
-        transform: translateY(150px) !important;
-        /* Другие свойства, если они переопределяются в мобильной верстке */
+                padding: 10px 25px !important;
+                font-size: 1.2rem !important;
+                transform: translateY(150px) !important;
             }
-
         }
     </style>
 </head>
@@ -501,7 +495,7 @@
 
             <div class="map-container">
                 <!-- Яндекс.Карта с точным адресом -->
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e1c9a3c0a1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1&amp;mode=search&amp;text=Singer%20Bar%2C%20%D1%83%D0%BB.%20%D0%9F%D1%8F%D1%82%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F%2C%2052%2C%20%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5%202%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&amp;z=17" frameborder="0" allowfullscreen="true"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e1c9a3c0a1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1c3b3e3c1&mode=search&text=Singer%20Bar%2C%20%D1%83%D0%BB.%20%D0%9F%D1%8F%D1%82%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F%2C%2052%2C%20%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5%202%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&z=17" frameborder="0" allowfullscreen="true"></iframe>
             </div>
             <a href="https://yandex.ru/maps/org/singer_bar/1124715035/?ll=37.627847%2C55.752024&z=17" class="location-link" target="_blank">Открыть в Яндекс.Картах</a>
             
@@ -552,7 +546,7 @@
                 <p>Пожалуйста, подтвердите участие <span class="name">до 1 июля</span></p>
                 <button type="submit">Отправить ответ</button>
             </form>
-           <p style="color: var(--secondary); font-weight: 600; font-size: 1.8rem; margin: 30px 0;">Буду рад видеть Вас!</p> 
+            <p style="color: var(--secondary); font-weight: 600; font-size: 1.8rem; margin: 30px 0;">Буду рад видеть Вас!</p> 
         </div>
     </section>
     <footer>
@@ -588,8 +582,6 @@
                 };
                 
                 submitRSVP(formData);
-                
-                alert('Спасибо за ваш ответ! Мы сохранили ваши данные.');
             });
         });
         
@@ -598,11 +590,30 @@
         }
         
         function submitRSVP(formData) {
-            console.log('Отправка данных о посещении:', formData);
-            
-            if (formData.attending === 'yes') {
-                createConfetti();
-            }
+            fetch('submit_rsvp.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Ответ сервера:', data);
+                if (data.status === 'success') {
+                    alert('Спасибо за ваш ответ! Мы сохранили ваши данные.');
+                    document.getElementById('rsvpForm').reset(); // Очистка формы
+                    if (formData.attending === 'yes') {
+                        createConfetti();
+                    }
+                } else {
+                    alert('Ошибка: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка:', error);
+                alert('Произошла ошибка при отправке данных.');
+            });
         }
         
         function createConfetti() {
